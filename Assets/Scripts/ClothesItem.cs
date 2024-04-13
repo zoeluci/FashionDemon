@@ -2,15 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Clothes : MonoBehaviour
+public class ClothesItem : MonoBehaviour
 {
     bool isCollected = false;
     public GameObject clothesIcon;
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 
     void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +16,6 @@ public class Clothes : MonoBehaviour
         {
             clothesIcon.SetActive(true);
             Destroy(gameObject);
-            
         }
     }
 }
