@@ -16,7 +16,7 @@ public class Pausa : MonoBehaviour
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
     }
 
     // Update is called once per frame
