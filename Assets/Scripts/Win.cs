@@ -9,12 +9,14 @@ public class Win : MonoBehaviour
     public GameObject shirtIcon;
     public GameObject bootsIcon;
     public GameObject winScreen;
+    public GameObject timer;
     void Update()
     {
         if(hatIcon.activeInHierarchy && trousersIcon.activeInHierarchy && shirtIcon.activeInHierarchy && bootsIcon.activeInHierarchy)
         {
             winScreen.SetActive(true);
             Time.timeScale = 0;
+            timer.SetActive(false);
         }
     }
 }
