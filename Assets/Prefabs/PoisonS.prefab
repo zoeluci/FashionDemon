@@ -10,10 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6576425768681652686}
   - component: {fileID: 4203653605895224256}
-  - component: {fileID: 843067330001117955}
   m_Layer: 0
   m_Name: PoisonS
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -79,19 +78,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.1824791, y: 1.0788321}
   m_EdgeRadius: 0
---- !u!114 &843067330001117955
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7086086057440012243}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8242a370bae88642b32f264c781a337, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverScreen: {fileID: 0}
 --- !u!1 &9066082868675376067
 GameObject:
   m_ObjectHideFlags: 0
