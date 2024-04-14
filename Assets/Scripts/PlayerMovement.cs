@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     Rigidbody2D body;
+    Animator anim;
     public float runSpeed;
     public float jumpSpeed;
     bool grounded;
@@ -12,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -26,11 +28,15 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.W) && grounded)
             Jump();
+
+        anim.SetBool("run", horizontalInput != 0);
+        anim.SetBool("grounded", grounded);
     }
 
     void Jump()
     {
         body.velocity = new Vector2(body.velocity.x, jumpSpeed);
+        anim.SetTrigger("jump");
         grounded = false;
     }
 
