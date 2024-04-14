@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1575880783625428653}
   - component: {fileID: 1099137559154556221}
   - component: {fileID: 493137843963479595}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: FancyShirt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ce8a99dbbe60a0243a29e8ea40cfddd4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
