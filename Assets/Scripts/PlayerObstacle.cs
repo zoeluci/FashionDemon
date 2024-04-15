@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class PlayerObstacle : MonoBehaviour
 {
-    public GameObject gameOverScreen;
+    public GameObject deathScreen;
 
     void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Obstacle"))
         {
-            gameOverScreen.SetActive(true);
+            deathScreen.SetActive(true);
             Time.timeScale = 0;
         }
     }
